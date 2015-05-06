@@ -21,8 +21,9 @@ RUN \
   wget 'http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/15.0/linux-x86_64/en-US/firefox-15.0.tar.bz2' && \
   tar -jxvf firefox-15.0.tar.bz2 && \
   ln -sf /opt/firefox/firefox /usr/bin/firefox && \
+  ln -sf /usr/share/java/commons-lang.jar /usr/share/maven/lib/commons-lang.jar && \
   rm firefox*.tar.bz2 && \
-  rm -rf /var/lib/apt/lists/* # 2015-03-26
+  rm -rf /var/lib/apt/lists/* # 2015-05-05
 
 # From: https://registry.hub.docker.com/u/selenium/node-base/dockerfile/
 #===============
